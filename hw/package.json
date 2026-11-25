@@ -1,0 +1,21 @@
+{
+  "name": "json-api-board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZlatoslavaVy/json-api-board.git"
+  },
+  "keywords": [],
+  "author": "Zlatoslava Vyshkivska <zlatoslava6b@gmail.com>",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ZlatoslavaVy/json-api-board/issues"
+  },
+  "homepage": "https://github.com/ZlatoslavaVy/json-api-board#readme"
+}
