@@ -17,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/ZlatoslavaVy/json-api-board/issues"
   },
-  "homepage": "https://github.com/ZlatoslavaVy/json-api-board#readme"
+  "homepage": "https://github.com/ZlatoslavaVy/json-api-board#readme",
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.10.1",
+    "@prisma/client": "^7.10.1",
+    "dotenv": "^18.0.10"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.10",
+    "prisma": "^8.0.0-rc.35",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
 }
