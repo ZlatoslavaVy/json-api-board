@@ -2,3 +2,5 @@ node_modules/
 hw/node_modules/
 .env
 hw/.env
+/prisma/generated/prisma
+generated/
