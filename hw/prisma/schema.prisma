@@ -11,3 +11,31 @@ datasource db {
 }
 
 // Models here
+
+model User {
+    id Int @id @default(autoincrement())
+    username String @unique
+    email String @unique
+    password String 
+    name String
+    createdAt DateTime @default(now())
+    announcements Announcement[]
+    refreshTokens RefreshToken[]
+}
+
+model RefreshToken {
+    id Int @id @default(autoincrement())
+    token String @unique @db.Text
+    userId User[] @unique
+}
+
+model Announcement {
+    id Int @id @default(autoincrement())
+    title String
+    description String
+    price Int
+    category String
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+    userId User[] @unique
+}
