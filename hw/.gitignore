@@ -4,3 +4,6 @@ hw/node_modules/
 hw/.env
 /prisma/generated/prisma
 generated/
+/generated/prisma
+*.db
+*.db-journal
