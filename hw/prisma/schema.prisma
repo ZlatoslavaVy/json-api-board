@@ -26,7 +26,8 @@ model User {
 model RefreshToken {
     id Int @id @default(autoincrement())
     token String @unique @db.Text
-    userId User[] @unique
+    userId Int @unique
+    user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model Announcement {
@@ -37,5 +38,6 @@ model Announcement {
     category String
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
-    userId User[] @unique
+    userId Int 
+    user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
